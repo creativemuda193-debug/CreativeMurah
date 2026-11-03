@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics Design - Jasa Desain Grafis Profesional</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#0066FF',
+                            darkBlue: '#0043A8',
+                            lightBlue: '#3385FF',
+                            black: '#0B0F17',
+                            darkCard: '#131B2E',
+                            border: '#1E293B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0B0F17;
+            color: #E2E8F0;
+            font-family: 'Inter', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(0, 102, 255, 0.3);
+        }
+        .glow-text {
+            text-shadow: 0 0 20px rgba(0, 102, 255, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-brand-black text-slate-200 min-h-screen flex flex-col justify-between overflow-x-hidden">
+
+    <!-- ================= TOP CONTACT HEADER BAR ================= -->
+    <div class="bg-slate-950/90 border-b border-brand-border/80 text-[11px] py-2 px-4 text-slate-400">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2.5">
+            <!-- Informasi Kontak Fast Response -->
+            <div class="flex items-center gap-3 sm:gap-5 flex-wrap justify-center md:justify-start">
+                <span class="flex items-center gap-1.5 hover:text-white transition-colors">
+                    <i class="fa-solid fa-clock text-brand-blue text-[10px]"></i>
+                    <span>Buka: 08.00 - 21.00 WIB</span>
+                </span>
+                <span class="text-slate-800 hidden sm:inline">•</span>
+                <a href="https://wa.me/6285777238700" target="_blank" class="flex items-center gap-1.5 hover:text-emerald-400 transition-colors font-medium">
+                    <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                    <span>+62 857-7723-8700</span>
+                </a>
+                <span class="text-slate-800 hidden md:inline">•</span>
+                <a href="mailto:info@graphicsdesign.com" class="hidden md:flex items-center gap-1.5 hover:text-white transition-colors">
+                    <i class="fa-regular fa-envelope text-brand-blue"></i>
+                    <span>info@graphicsdesign.com</span>
+                </a>
+            </div>
+
+            <!-- Tautan Cepat Navigasi Atas -->
+            <div class="flex items-center gap-2.5 sm:gap-3 font-medium text-slate-300 flex-wrap justify-center">
+                <a href="#home" class="hover:text-brand-blue transition-colors flex items-center gap-1">
+                    <i class="fa-solid fa-house text-[10px] text-brand-blue"></i> Home
+                </a>
+                <span class="text-slate-800">|</span>
+                <a href="#company-profile" class="hover:text-brand-blue transition-colors flex items-center gap-1">
+                    <i class="fa-solid fa-building text-[10px] text-brand-blue"></i> Profil Usaha
+                </a>
+                <span class="text-slate-800">|</span>
+                <a href="https://www.instagram.com/cirjafareeee" target="_blank" class="hover:text-pink-400 transition-colors flex items-center gap-1">
+                    <i class="fa-brands fa-instagram text-[11px] text-pink-400"></i> Instagram
+                </a>
+                <span class="text-slate-800">|</span>
+                <a href="https://lynk.id/fajardesign" target="_blank" class="hover:text-purple-400 transition-colors flex items-center gap-1">
+                    <i class="fa-solid fa-link text-[10px] text-purple-400"></i> Lynk.id
+                </a>
+                <span class="text-slate-800">|</span>
+                <a href="https://fortofoliographics.netlify.app/" target="_blank" class="hover:text-cyan-400 transition-colors flex items-center gap-1">
+                    <i class="fa-solid fa-globe text-[10px] text-cyan-400"></i> Portofolio Netlify
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= NAVBAR MAIN ================= -->
+    <nav class="sticky top-0 z-50 bg-brand-black/95 backdrop-blur-lg border-b border-brand-border/80 shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20">
+                <!-- Logo Company -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-brand-blue via-blue-500 to-cyan-400 flex items-center justify-center text-white font-black text-lg sm:text-xl shadow-lg shadow-brand-blue/30 group-hover:scale-105 transition-all">
+                        GD
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-extrabold text-lg sm:text-xl tracking-tight text-white leading-none">Graphics<span class="text-brand-blue">Design</span></span>
+                        <span class="text-[9px] sm:text-[10px] text-slate-400 font-medium tracking-widest uppercase mt-0.5 sm:mt-1">Creative Agency</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center gap-7 font-semibold text-xs tracking-wider uppercase">
+                    <a href="#company-profile" class="text-slate-300 hover:text-brand-blue transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-brand-blue hover:after:w-full after:transition-all">Profil Usaha</a>
+                    <a href="#layanan" class="text-slate-300 hover:text-brand-blue transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-brand-blue hover:after:w-full after:transition-all">Layanan</a>
+                    <a href="#harga" class="text-slate-300 hover:text-brand-blue transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-brand-blue hover:after:w-full after:transition-all">Harga Paket</a>
+                    <a href="#portofolio" class="text-slate-300 hover:text-brand-blue transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-brand-blue hover:after:w-full after:transition-all">Portofolio</a>
+                    <a href="#analytics" class="text-slate-300 hover:text-brand-blue transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-brand-blue hover:after:w-full after:transition-all">Analytics</a>
+                    <a href="#testimoni" class="text-slate-300 hover:text-brand-blue transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-brand-blue hover:after:w-full after:transition-all">Testimoni</a>
+                </div>
+
+                <!-- Call To Action Buttons -->
+                <div class="hidden sm:flex items-center gap-2.5">
+                    <a href="https://lynk.id/fajardesign" 
+                       target="_blank" 
+                       class="hidden xl:inline-flex border border-purple-500/40 text-purple-400 hover:bg-purple-600 hover:text-white text-xs px-3.5 py-2 rounded-full font-semibold transition-all duration-300 items-center gap-1.5 hover:shadow-lg hover:shadow-purple-500/20">
+                        <i class="fa-solid fa-link text-[11px]"></i>
+                        <span>Lynk.id</span>
+                    </a>
+                    <a href="https://fortofoliographics.netlify.app/" 
+                       target="_blank" 
+                       class="hidden xl:inline-flex border border-brand-blue/40 text-brand-lightBlue hover:bg-brand-blue hover:text-white text-xs px-3.5 py-2 rounded-full font-semibold transition-all duration-300 items-center gap-1.5 hover:shadow-lg hover:shadow-brand-blue/20">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+                        <span>Live Site</span>
+                    </a>
+                    <a href="https://wa.me/6285777238700?text=Halo%20Graphics%20Design,%20saya%20ingin%20konsultasi%20jasa%20desain" 
+                       target="_blank" 
+                       class="bg-brand-blue hover:bg-brand-darkBlue text-white text-xs px-4 sm:px-5 py-2.5 rounded-full font-semibold transition-all duration-300 flex items-center gap-2 shadow-lg shadow-brand-blue/25 hover:shadow-brand-blue/40 hover:scale-105">
+                        <i class="fa-brands fa-whatsapp text-sm text-green-400"></i>
+                        <span>Pesan WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none p-2 rounded-xl border border-brand-border/80 bg-brand-darkCard/60 active:scale-95 transition-all">
+                        <i class="fa-solid fa-bars text-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Items -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-brand-darkCard border-b border-brand-border/80 px-5 pt-2 pb-6 space-y-2.5 font-medium text-sm">
+            <a href="#home" class="mobile-link flex items-center justify-between py-2 text-slate-300 hover:text-brand-blue border-b border-brand-border/30">
+                <span class="flex items-center gap-2"><i class="fa-solid fa-house text-brand-blue text-xs"></i> Beranda</span> 
+                <i class="fa-solid fa-chevron-right text-[10px] text-slate-500"></i>
+            </a>
+            <a href="#company-profile" class="mobile-link flex items-center justify-between py-2 text-slate-300 hover:text-brand-blue border-b border-brand-border/30">
+                <span class="flex items-center gap-2"><i class="fa-solid fa-building text-brand-blue text-xs"></i> Profil Usaha</span> 
+                <i class="fa-solid fa-chevron-right text-[10px] text-slate-500"></i>
+            </a>
+            <a href="#layanan" class="mobile-link flex items-center justify-between py-2 text-slate-300 hover:text-brand-blue border-b border-brand-border/30">
+                <span class="flex items-center gap-2"><i class="fa-solid fa-pen-nib text-brand-blue text-xs"></i> Layanan</span> 
+                <i class="fa-solid fa-chevron-right text-[10px] text-slate-500"></i>
+            </a>
+            <a href="#harga" class="mobile-link flex items-center justify-between py-2 text-slate-300 hover:text-brand-blue border-b border-brand-border/30">
+                <span class="flex items-center gap-2"><i class="fa-solid fa-tags text-brand-blue text-xs"></i> Harga Paket</span> 
+                <i class="fa-solid fa-chevron-right text-[10px] text-slate-500"></i>
+            </a>
+            <a href="#portofolio" class="mobile-link flex items-center justify-between py-2 text-slate-300 hover:text-brand-blue border-b border-brand-border/30">
+                <span class="flex items-center gap-2"><i class="fa-solid fa-images text-brand-blue text-xs"></i> Portofolio</span> 
+                <i class="fa-solid fa-chevron-right text-[10px] text-slate-500"></i>
+            </a>
+            <a href="#analytics" class="mobile-link flex items-center justify-between py-2 text-slate-300 hover:text-brand-blue border-b border-brand-border/30">
+                <span class="flex items-center gap-2"><i class="fa-solid fa-chart-line text-brand-blue text-xs"></i> Analytics</span> 
+                <i class="fa-solid fa-chevron-right text-[10px] text-slate-500"></i>
+            </a>
+            <a href="#testimoni" class="mobile-link flex items-center justify-between py-2 text-slate-300 hover:text-brand-blue border-b border-brand-border/30">
+                <span class="flex items-center gap-2"><i class="fa-solid fa-comment-dots text-brand-blue text-xs"></i> Testimoni</span> 
+                <i class="fa-solid fa-chevron-right text-[10px] text-slate-500"></i>
+            </a>
+            <a href="https://www.instagram.com/cirjafareeee" target="_blank" class="mobile-link flex items-center justify-between py-2 text-pink-400 font-semibold border-b border-brand-border/30">
+                <span class="flex items-center gap-2"><i class="fa-brands fa-instagram text-sm"></i> Instagram @cirjafareeee</span> 
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+            <a href="https://lynk.id/fajardesign" target="_blank" class="mobile-link flex items-center justify-between py-2 text-purple-400 font-semibold border-b border-brand-border/30">
+                <span class="flex items-center gap-2"><i class="fa-solid fa-link text-xs"></i> Profil Lynk.id</span> 
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+            <a href="https://fortofoliographics.netlify.app/" target="_blank" class="mobile-link flex items-center justify-between py-2 text-cyan-400 font-semibold border-b border-brand-border/30">
+                <span class="flex items-center gap-2"><i class="fa-solid fa-globe text-xs"></i> Portofolio Netlify</span> 
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+            <a href="https://wa.me/6285777238700?text=Halo%20Graphics%20Design,%20saya%20ingin%20konsultasi%20jasa%20desain" 
+               target="_blank" 
+               class="w-full bg-brand-blue hover:bg-brand-darkBlue text-white py-3 rounded-xl font-semibold flex items-center justify-center gap-2 mt-3 shadow-lg shadow-brand-blue/30">
+                <i class="fa-brands fa-whatsapp text-base text-green-400"></i>
+                <span>Pesan Sekarang via WhatsApp</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- ================= PROFIL USAMA / COMPANY PROFILE SECTION ================= -->
+    <section id="company-profile" class="py-16 bg-brand-darkCard/50 border-b border-brand-border/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- Info Usaha -->
+                <div>
+                    <span class="text-brand-blue font-bold text-xs uppercase tracking-widest mb-2 block">Profil Perusahaan</span>
+                    <h2 class="text-3xl font-extrabold text-white mb-4">Graphics<span class="text-brand-blue">Design</span> Agency</h2>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                        <strong class="text-white">Graphics Design</strong> adalah penyedia jasa desain grafis profesional yang didirikan dan dipimpin oleh <strong class="text-brand-lightBlue">Fajar Nurhidayat</strong>. Kami hadir untuk membantu UMKM, Startup, dan Perusahaan dalam menciptakan identitas visual yang kreatif, menarik, dan berdaya saing tinggi.
+                    </p>
+                    <div class="flex flex-wrap gap-3 mt-4 mb-6">
+                        <a href="https://www.instagram.com/cirjafareeee" target="_blank" class="inline-flex items-center gap-2 bg-pink-600/20 hover:bg-pink-600 text-pink-300 hover:text-white border border-pink-500/40 px-4 py-2 rounded-xl text-xs font-semibold transition-all duration-300">
+                            <i class="fa-brands fa-instagram"></i>
+                            <span>@cirjafareeee</span>
+                        </a>
+                        <a href="https://lynk.id/fajardesign" target="_blank" class="inline-flex items-center gap-2 bg-purple-600/20 hover:bg-purple-600 text-purple-300 hover:text-white border border-purple-500/40 px-4 py-2 rounded-xl text-xs font-semibold transition-all duration-300">
+                            <i class="fa-solid fa-link"></i>
+                            <span>Kunjungi Lynk.id / fajardesign</span>
+                        </a>
+                        <a href="https://fortofoliographics.netlify.app/" target="_blank" class="inline-flex items-center gap-2 bg-brand-blue/20 hover:bg-brand-blue text-brand-lightBlue hover:text-white border border-brand-blue/40 px-4 py-2 rounded-xl text-xs font-semibold transition-all duration-300">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>Netlify Showcase</span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 text-xs font-medium text-slate-300">
+                        <div class="flex items-center gap-2 bg-brand-black/60 p-3 rounded-xl border border-brand-border">
+                            <i class="fa-solid fa-user-tie text-brand-blue text-base"></i>
+                            <div>
+                                <span class="block text-[10px] text-slate-500 uppercase">Founder / Designer</span>
+                                <span class="font-bold text-white">Fajar Nurhidayat</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 bg-brand-black/60 p-3 rounded-xl border border-brand-border">
+                            <i class="fa-solid fa-building-columns text-red-400 text-base"></i>
+                            <div>
+                                <span class="block text-[10px] text-slate-500 uppercase">Rekening Resmi</span>
+                                <span class="font-bold text-white">CIMB Niaga</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Visi Misi Ringkas -->
+                <div class="bg-brand-black border border-brand-border/80 p-6 rounded-2xl relative overflow-hidden">
+                    <div class="absolute -right-6 -bottom-6 w-32 h-32 bg-brand-blue/10 rounded-full blur-2xl pointer-events-none"></div>
+                    <h3 class="text-white font-bold text-base mb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-bullseye text-brand-blue"></i> Komitmen Layanan Kami
+                    </h3>
+                    <ul class="space-y-2.5 text-xs text-slate-300">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-emerald-400 mt-0.5"></i>
+                            <span>Desain eksklusif dan original sesuai karakter brand usaha Anda.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-emerald-400 mt-0.5"></i>
+                            <span>Proses diskusi mudah, fleksibel, serta estimasi pengerjaan yang tepat waktu.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-emerald-400 mt-0.5"></i>
+                            <span>Mendukung berbagai skema pembayaran digital & kemudahan transaksi.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="home" class="pt-20 pb-20 md:pt-28 md:pb-32 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Teks Deskripsi Banner Promosi -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-brand-blue/10 border border-brand-blue/30 px-3.5 py-1.5 rounded-full text-brand-lightBlue text-xs font-semibold uppercase tracking-wider mb-6">
+                        <span class="w-2 h-2 rounded-full bg-brand-blue animate-pulse"></span>
+                        <span>Jasa Desain Grafis Profesional & Terpercaya</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight mb-6">
+                        Tingkatkan Citra Bisnis Anda Melalui <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue via-cyan-400 to-blue-300">Desain Visual Kreatif</span>
+                    </h1>
+                    <p class="text-slate-300 text-base sm:text-lg mb-8 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Kami menciptakan identitas visual eksklusif mulai dari logo, branding, desain media sosial, hingga materi promosi cetak yang menarik perhatian calon pembeli Anda.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <button onclick="openQrisModal('Desain Custom Promosi', '50.000')" class="w-full sm:w-auto bg-brand-blue hover:bg-brand-darkBlue text-white font-bold px-8 py-3.5 rounded-xl transition-all duration-300 flex items-center justify-center gap-2.5 shadow-xl shadow-brand-blue/30 hover:scale-105 active:scale-95">
+                            <i class="fa-solid fa-qrcode text-lg"></i>
+                            <span>Pesan via QRIS Instan</span>
+                        </button>
+                        <a href="https://wa.me/6285777238700?text=Halo%20Graphics%20Design,%20saya%20ingin%20konsultasi%20jasa%20desain" target="_blank" class="w-full sm:w-auto border border-emerald-500/50 text-emerald-400 hover:bg-emerald-500 hover:text-white font-bold px-7 py-3.5 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 active:scale-95">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Tanya via WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tampilan Gambar Visual Banner Promosi -->
+                <div class="lg:col-span-5 relative">
+                    <!-- Glowing Background Effect -->
+                    <div class="absolute -inset-1 bg-gradient-to-r from-brand-blue to-cyan-400 rounded-3xl blur-2xl opacity-40 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                    
+                    <div class="relative bg-brand-darkCard border border-brand-border rounded-3xl p-3 shadow-2xl overflow-hidden group">
+                        <!-- Main Banner Image -->
+                        <div class="relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Graphics Design Showcase Banner" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                 onerror="this.src='https://placehold.co/800x600/131B2E/0066FF?text=Graphics+Design+Showcase'">
+                            
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-black/90 via-brand-black/20 to-transparent"></div>
+                            
+                            <!-- Floating Badge Info atas Gambar -->
+                            <div class="absolute top-4 right-4 bg-brand-black/80 backdrop-blur-md border border-brand-blue/40 px-3 py-1.5 rounded-xl flex items-center gap-2 text-xs font-semibold text-white shadow-lg">
+                                <i class="fa-solid fa-sparkles text-amber-400"></i>
+                                <span>Kualitas HD & Original</span>
+                            </div>
+
+                            <div class="absolute bottom-4 left-4 right-4 bg-brand-black/90 backdrop-blur-md border border-brand-border p-4 rounded-xl">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h4 class="text-white font-bold text-sm">Visual Branding Studio</h4>
+                                        <p class="text-slate-400 text-xs mt-0.5">Fajar Nurhidayat • Lead Designer</p>
+                                    </div>
+                                    <a href="https://fortofoliographics.netlify.app/" target="_blank" class="bg-brand-blue hover:bg-brand-darkBlue text-white text-xs px-3 py-2 rounded-lg font-semibold transition-colors flex items-center gap-1 shrink-0">
+                                        <span>Showcase</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= LAYANAN ================= -->
+    <section id="layanan" class="py-20 bg-brand-black/50 border-t border-brand-border/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-brand-blue font-semibold text-sm uppercase tracking-widest mb-2">Layanan Kami</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-white">Layanan Desain Grafis Yang Kami Sediakan</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-brand-darkCard border border-brand-border p-6 rounded-2xl hover:border-brand-blue/50 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center text-brand-blue text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition-all">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Desain Logo & Branding</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Identitas visual yang unik dan berkarakter untuk membangun kepercayaan calon konsumen Anda.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-brand-darkCard border border-brand-border p-6 rounded-2xl hover:border-brand-blue/50 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center text-brand-blue text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition-all">
+                        <i class="fa-solid fa-hashtag"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Media Sosial Design</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Desain konten Instagram, Facebook, & TikTok yang menarik perhatian dan meningkatkan interaksi.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-brand-darkCard border border-brand-border p-6 rounded-2xl hover:border-brand-blue/50 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center text-brand-blue text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition-all">
+                        <i class="fa-solid fa-scroll"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Banner & Spanduk</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Desain promosi cetak & digital seperti banner, flyer, brosur, dan poster beresolusi tinggi.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-brand-darkCard border border-brand-border p-6 rounded-2xl hover:border-brand-blue/50 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center text-brand-blue text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition-all">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Desain Kemasan</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Desain kemasan produk (packaging & label) yang profesional agar produk Anda tampil menonjol di pasar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= DAFTAR HARGA & PAKET ================= -->
+    <section id="harga" class="py-20 border-t border-brand-border/50 bg-brand-black/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-brand-blue font-semibold text-sm uppercase tracking-widest mb-2">Penawaran Transparan</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-white">Paket Harga Desain</h3>
+                <p class="text-slate-400 text-sm mt-3">Pilih paket sesuai kebutuhan bisnis Anda, mulai dari harga super murah hingga paket custom sesuai anggaran.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Paket Super Murah (Hemat) -->
+                <div class="bg-brand-darkCard border border-amber-500/30 p-5 rounded-2xl flex flex-col justify-between hover:border-amber-400 transition-all duration-300">
+                    <div>
+                        <span class="text-[10px] font-bold uppercase text-amber-400 tracking-wider bg-amber-400/10 px-2 py-0.5 rounded-full inline-block mb-2">Super Murah</span>
+                        <h4 class="text-lg font-bold text-white mb-3">Paket Hemat</h4>
+                        <div class="mb-5">
+                            <span class="text-2xl font-extrabold text-amber-400">Rp 25.000</span>
+                            <span class="text-[10px] text-slate-400">/ item</span>
+                        </div>
+                        <ul class="space-y-2.5 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-amber-400 text-[10px]"></i> Edit Foto / Re-vector Logo</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-400 text-[10px]"></i> Desain Stiker / Kartu Nama</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-400 text-[10px]"></i> 1x Revisi Ringan</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-400 text-[10px]"></i> Format File JPG/PNG</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-400 text-[10px]"></i> Pengerjaan Super Cepat</li>
+                        </ul>
+                    </div>
+                    <button onclick="openQrisModal('Paket Hemat', '25.000')" 
+                            class="w-full text-center py-2.5 bg-amber-500 hover:bg-amber-600 text-black font-bold rounded-xl text-xs transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-amber-500/20">
+                        <i class="fa-solid fa-qrcode"></i>
+                        <span>Bayar QRIS (Rp 25.000)</span>
+                    </button>
+                </div>
+
+                <!-- Paket Basic -->
+                <div class="bg-brand-darkCard border border-brand-border p-5 rounded-2xl flex flex-col justify-between hover:border-brand-blue/50 transition-all duration-300">
+                    <div>
+                        <span class="text-[10px] font-semibold uppercase text-slate-400 tracking-wider">Pemula / UMKM</span>
+                        <h4 class="text-lg font-bold text-white mb-3">Paket Basic</h4>
+                        <div class="mb-5">
+                            <span class="text-2xl font-extrabold text-white">Rp 50.000</span>
+                            <span class="text-[10px] text-slate-400">/ desain</span>
+                        </div>
+                        <ul class="space-y-2.5 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> 1 Konsep Desain Simple</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> Banner / Flyer / Feed IG</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> Maksimal 2x Revisi</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> Format File High-Res (JPG/PNG)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> Pengerjaan 1-2 Hari</li>
+                        </ul>
+                    </div>
+                    <button onclick="openQrisModal('Paket Basic', '50.000')" 
+                            class="w-full text-center py-2.5 bg-brand-blue hover:bg-brand-darkBlue text-white font-semibold rounded-xl text-xs transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-brand-blue/20">
+                        <i class="fa-solid fa-qrcode"></i>
+                        <span>Bayar QRIS (Rp 50.000)</span>
+                    </button>
+                </div>
+
+                <!-- Paket Branding (Best Value) -->
+                <div class="bg-gradient-to-b from-brand-darkCard to-brand-darkBlue/20 border-2 border-brand-blue p-5 rounded-2xl flex flex-col justify-between relative shadow-xl shadow-brand-blue/10">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-blue text-white text-[9px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider whitespace-nowrap">
+                        Paling Populer
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-semibold uppercase text-brand-lightBlue tracking-wider">Identitas Bisnis</span>
+                        <h4 class="text-lg font-bold text-white mb-3">Logo & Branding</h4>
+                        <div class="mb-5">
+                            <span class="text-2xl font-extrabold text-white">Rp 250.000</span>
+                            <span class="text-[10px] text-slate-400">/ logo</span>
+                        </div>
+                        <ul class="space-y-2.5 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> 2-3 Konsep Logo</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> File Master Lengkap (AI, PDF, PNG)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> Revisi Sampai Puas (Maks 5x)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> Mockup 3D Presentation</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> Hak Cipta Milik Klien</li>
+                        </ul>
+                    </div>
+                    <button onclick="openQrisModal('Paket Logo & Branding', '250.000')" 
+                            class="w-full text-center py-2.5 bg-gradient-to-r from-brand-blue to-cyan-500 hover:from-brand-darkBlue hover:to-cyan-600 text-white font-bold rounded-xl text-xs shadow-lg transition-all duration-300 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-qrcode"></i>
+                        <span>Bayar QRIS (Rp 250.000)</span>
+                    </button>
+                </div>
+
+                <!-- Paket Media Sosial -->
+                <div class="bg-brand-darkCard border border-brand-border p-5 rounded-2xl flex flex-col justify-between hover:border-brand-blue/50 transition-all duration-300">
+                    <div>
+                        <span class="text-[10px] font-semibold uppercase text-slate-400 tracking-wider">Bulanan / Konten</span>
+                        <h4 class="text-lg font-bold text-white mb-3">Social Media</h4>
+                        <div class="mb-5">
+                            <span class="text-2xl font-extrabold text-white">Rp 450.000</span>
+                            <span class="text-[10px] text-slate-400">/ paket</span>
+                        </div>
+                        <ul class="space-y-2.5 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> 10 Desain Feed IG/TikTok</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> Gratis 2 Desain Story</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> Template Feed Harmonis</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> Copywriting/Caption Simple</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> Revisi Ringan 3x</li>
+                        </ul>
+                    </div>
+                    <button onclick="openQrisModal('Paket Social Media', '450.000')" 
+                            class="w-full text-center py-2.5 bg-brand-blue hover:bg-brand-darkBlue text-white font-semibold rounded-xl text-xs transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-brand-blue/20">
+                        <i class="fa-solid fa-qrcode"></i>
+                        <span>Bayar QRIS (Rp 450.000)</span>
+                    </button>
+                </div>
+
+                <!-- Paket Custom / Sesuai Budget -->
+                <div class="bg-gradient-to-b from-brand-darkCard to-slate-900 border border-brand-border p-5 rounded-2xl flex flex-col justify-between hover:border-emerald-500/50 transition-all duration-300">
+                    <div>
+                        <span class="text-[10px] font-semibold uppercase text-emerald-400 tracking-wider">Paling Fleksibel</span>
+                        <h4 class="text-lg font-bold text-white mb-3">Sesuai Budget</h4>
+                        <div class="mb-5">
+                            <span class="text-2xl font-extrabold text-emerald-400">Custom</span>
+                            <span class="text-[10px] text-slate-400">/ Anggaran Anda</span>
+                        </div>
+                        <p class="text-[11px] text-slate-400 mb-4 leading-relaxed">
+                            Punya budget khusus? Ceritakan kebutuhan desain dan anggaran Anda, kami siap bantu!
+                        </p>
+                        <ul class="space-y-2.5 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400 text-[10px]"></i> Nego Sesuai Anggaran</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400 text-[10px]"></i> Bebas Pilih Desain</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400 text-[10px]"></i> Konsultasi Gratis</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/6285777238700?text=Halo%20Graphics%20Design,%20saya%20ingin%20diskusi%20desain%20dengan%20budget%20custom" 
+                       target="_blank" 
+                       class="w-full text-center py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-xl text-xs shadow-lg transition-all duration-300 flex items-center justify-center gap-1.5">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Diskusi Budget</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bagian Metode Pembayaran QRIS Utama -->
+            <div class="mt-16 bg-brand-darkCard border border-brand-blue/50 rounded-2xl p-6 sm:p-8 text-center max-w-4xl mx-auto relative overflow-hidden">
+                <div class="inline-flex items-center gap-2 bg-brand-blue/20 text-brand-lightBlue border border-brand-blue/40 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
+                    <i class="fa-solid fa-qrcode"></i> Metode Pembayaran Utama
+                </div>
+                <h4 class="text-white font-bold text-xl mb-2">Scan & Bayar Instan Menggunakan QRIS</h4>
+                <p class="text-slate-400 text-xs sm:text-sm mb-6 max-w-2xl mx-auto">Mendukung pembayaran langsung dari seluruh aplikasi E-Wallet & Mobile Banking tanpa biaya tambahan.</p>
+                
+                <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+                    <div class="bg-brand-black/90 border border-brand-blue/40 px-4 py-2 rounded-xl flex items-center gap-2 text-xs font-bold text-white shadow-lg">
+                        <i class="fa-solid fa-qrcode text-brand-blue text-lg"></i>
+                        <span>QRIS All Payment</span>
+                    </div>
+                    <div class="bg-brand-black/80 border border-brand-border px-4 py-2 rounded-xl flex items-center gap-2 text-xs font-bold text-sky-400">
+                        <i class="fa-solid fa-wallet"></i>
+                        <span>GoPay</span>
+                    </div>
+                    <div class="bg-brand-black/80 border border-brand-border px-4 py-2 rounded-xl flex items-center gap-2 text-xs font-bold text-purple-400">
+                        <i class="fa-solid fa-wallet"></i>
+                        <span>OVO</span>
+                    </div>
+                    <div class="bg-brand-black/80 border border-brand-border px-4 py-2 rounded-xl flex items-center gap-2 text-xs font-bold text-blue-400">
+                        <i class="fa-solid fa-wallet"></i>
+                        <span>DANA</span>
+                    </div>
+                    <div class="bg-brand-black/80 border border-brand-border px-4 py-2 rounded-xl flex items-center gap-2 text-xs font-bold text-orange-400">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span>ShopeePay</span>
+                    </div>
+                    <div class="bg-brand-black/80 border border-red-500/30 px-4 py-2 rounded-xl flex items-center gap-2 text-xs font-bold text-red-400">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <span>CIMB / BCA / Mandiri / BRI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= MODAL PEMBAYARAN QRIS ================= -->
+    <div id="qris-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="bg-brand-darkCard border border-brand-blue/50 w-full max-w-md rounded-2xl p-6 relative shadow-2xl animate-fade-in">
+            <!-- Close Button -->
+            <button onclick="closeQrisModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white p-1 rounded-lg border border-brand-border bg-brand-black/50">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <!-- Modal Header -->
+            <div class="text-center mb-5">
+                <div class="inline-flex items-center gap-1.5 bg-brand-blue/20 text-brand-lightBlue border border-brand-blue/40 px-3 py-1 rounded-full text-xs font-bold mb-2">
+                    <i class="fa-solid fa-qrcode"></i> Pembayaran QRIS
+                </div>
+                <h3 id="modal-packageName" class="text-xl font-extrabold text-white">Paket Desain</h3>
+                <div class="mt-1">
+                    <span class="text-xs text-slate-400">Total Tagihan:</span>
+                    <span id="modal-packagePrice" class="text-lg font-bold text-amber-400 ml-1">Rp 0</span>
+                </div>
+            </div>
+
+            <!-- Tampilan Barcode QRIS -->
+            <div class="bg-white p-4 rounded-xl text-center mb-5 max-w-[220px] mx-auto shadow-xl">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=00020101021126580014ID.GO.QRIS.WWW01189360091400000000000215200412345678905033605204581253033605802ID5915GraphicsDesign6007Jakarta61051011062070703A01" 
+                     alt="QRIS Pembayaran Graphics Design" 
+                     class="w-full h-auto mx-auto rounded-lg">
+                <span class="text-[10px] text-slate-700 font-bold uppercase tracking-wider block mt-2">Scan Dengan Aplikasi Apapun</span>
+            </div>
+
+            <!-- Instruksi & Alternatif Bank -->
+            <div class="bg-brand-black/80 border border-brand-border/80 p-3 rounded-xl mb-5 text-xs text-slate-300">
+                <div class="flex items-center justify-between mb-1 pb-1 border-b border-brand-border/50">
+                    <span class="text-slate-400">Merchant:</span>
+                    <span class="font-bold text-white">Graphics Design</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <span class="text-slate-400">Alternatif CIMB Niaga:</span>
+                    <span class="font-mono font-bold text-brand-lightBlue">708207071700 (Fajar)</span>
+                </div>
+            </div>
+
+            <!-- Tombol Konfirmasi WA -->
+            <a id="modal-waBtn" 
+               href="#" 
+               target="_blank" 
+               class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-xl text-xs flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/30 transition-all">
+                <i class="fa-brands fa-whatsapp text-base"></i>
+                <span>Konfirmasi Bukti Transfer / QRIS</span>
+            </a>
+        </div>
+    </div>
+
+                <!-- Paket Basic -->
+                <div class="bg-brand-darkCard border border-brand-border p-5 rounded-2xl flex flex-col justify-between hover:border-brand-blue/50 transition-all duration-300">
+                    <div>
+                        <span class="text-[10px] font-semibold uppercase text-slate-400 tracking-wider">Pemula / UMKM</span>
+                        <h4 class="text-lg font-bold text-white mb-3">Paket Basic</h4>
+                        <div class="mb-5">
+                            <span class="text-2xl font-extrabold text-white">Rp 50.000</span>
+                            <span class="text-[10px] text-slate-400">/ desain</span>
+                        </div>
+                        <ul class="space-y-2.5 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> 1 Konsep Desain Simple</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> Banner / Flyer / Feed IG</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> Maksimal 2x Revisi</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> Format File High-Res (JPG/PNG)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> Pengerjaan 1-2 Hari</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/6285777238700?text=Halo%20Graphics%20Design,%20saya%20tertarik%20dengan%20Paket%20Basic" 
+                       target="_blank" 
+                       class="w-full text-center py-2.5 border border-brand-blue text-brand-lightBlue hover:bg-brand-blue hover:text-white font-semibold rounded-xl text-xs transition-all duration-300">
+                        Pilih Paket
+                    </a>
+                </div>
+
+                <!-- Paket Branding (Best Value) -->
+                <div class="bg-gradient-to-b from-brand-darkCard to-brand-darkBlue/20 border-2 border-brand-blue p-5 rounded-2xl flex flex-col justify-between relative shadow-xl shadow-brand-blue/10">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-blue text-white text-[9px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider whitespace-nowrap">
+                        Paling Populer
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-semibold uppercase text-brand-lightBlue tracking-wider">Identitas Bisnis</span>
+                        <h4 class="text-lg font-bold text-white mb-3">Logo & Branding</h4>
+                        <div class="mb-5">
+                            <span class="text-2xl font-extrabold text-white">Rp 250.000</span>
+                            <span class="text-[10px] text-slate-400">/ logo</span>
+                        </div>
+                        <ul class="space-y-2.5 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> 2-3 Konsep Logo</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> File Master Lengkap (AI, PDF, PNG)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> Revisi Sampai Puas (Maks 5x)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> Mockup 3D Presentation</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> Hak Cipta Milik Klien</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/6285777238700?text=Halo%20Graphics%20Design,%20saya%20tertarik%20dengan%20Paket%20Logo%20%26%20Branding" 
+                       target="_blank" 
+                       class="w-full text-center py-2.5 bg-brand-blue hover:bg-brand-darkBlue text-white font-semibold rounded-xl text-xs shadow-lg transition-all duration-300">
+                        Pilih Paket
+                    </a>
+                </div>
+
+                <!-- Paket Media Sosial -->
+                <div class="bg-brand-darkCard border border-brand-border p-5 rounded-2xl flex flex-col justify-between hover:border-brand-blue/50 transition-all duration-300">
+                    <div>
+                        <span class="text-[10px] font-semibold uppercase text-slate-400 tracking-wider">Bulanan / Konten</span>
+                        <h4 class="text-lg font-bold text-white mb-3">Social Media</h4>
+                        <div class="mb-5">
+                            <span class="text-2xl font-extrabold text-white">Rp 450.000</span>
+                            <span class="text-[10px] text-slate-400">/ paket</span>
+                        </div>
+                        <ul class="space-y-2.5 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> 10 Desain Feed IG/TikTok</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> Gratis 2 Desain Story</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> Template Feed Harmonis</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> Copywriting/Caption Simple</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-blue text-[10px]"></i> Revisi Ringan 3x</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/6285777238700?text=Halo%20Graphics%20Design,%20saya%20tertarik%20dengan%20Paket%20Social%20Media" 
+                       target="_blank" 
+                       class="w-full text-center py-2.5 border border-brand-blue text-brand-lightBlue hover:bg-brand-blue hover:text-white font-semibold rounded-xl text-xs transition-all duration-300">
+                        Pilih Paket
+                    </a>
+                </div>
+
+                <!-- Paket Custom / Sesuai Budget -->
+                <div class="bg-gradient-to-b from-brand-darkCard to-slate-900 border border-brand-border p-5 rounded-2xl flex flex-col justify-between hover:border-emerald-500/50 transition-all duration-300">
+                    <div>
+                        <span class="text-[10px] font-semibold uppercase text-emerald-400 tracking-wider">Paling Fleksibel</span>
+                        <h4 class="text-lg font-bold text-white mb-3">Sesuai Budget</h4>
+                        <div class="mb-5">
+                            <span class="text-2xl font-extrabold text-emerald-400">Custom</span>
+                            <span class="text-[10px] text-slate-400">/ Anggaran Anda</span>
+                        </div>
+                        <p class="text-[11px] text-slate-400 mb-4 leading-relaxed">
+                            Punya budget khusus? Ceritakan kebutuhan desain dan anggaran Anda, kami siap bantu!
+                        </p>
+                        <ul class="space-y-2.5 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400 text-[10px]"></i> Nego Sesuai Anggaran</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400 text-[10px]"></i> Bebas Pilih Desain</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400 text-[10px]"></i> Konsultasi Gratis</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/6285777238700?text=Halo%20Graphics%20Design,%20saya%20ingin%20diskusi%20desain%20dengan%20budget%20tertentu" 
+                       target="_blank" 
+                       class="w-full text-center py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-xl text-xs shadow-lg transition-all duration-300 flex items-center justify-center gap-1.5">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Diskusi Budget</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bagian Metode Pembayaran / E-Wallet & Bank -->
+            <div class="mt-16 bg-brand-darkCard border border-brand-border rounded-2xl p-6 sm:p-8 text-center max-w-4xl mx-auto">
+                <h4 class="text-white font-bold text-lg mb-2">Metode Pembayaran Lengkap & Praktis</h4>
+                <p class="text-slate-400 text-xs sm:text-sm mb-6">Mendukung berbagai metode pembayaran digital E-Wallet, QRIS, dan Transfer Bank untuk kemudahan Anda.</p>
+                
+                <!-- Kotak Rekening Utama CIMB Niaga -->
+                <div class="mb-6 bg-brand-black/90 border border-brand-blue/40 rounded-xl p-4 max-w-md mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 shadow-lg shadow-brand-blue/5">
+                    <div class="flex items-center gap-3 text-left">
+                        <div class="w-10 h-10 rounded-lg bg-red-600/20 border border-red-500/30 flex items-center justify-center text-red-400 font-bold text-xs shrink-0">
+                            CIMB
+                        </div>
+                        <div>
+                            <span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider block">Bank CIMB Niaga</span>
+                            <span class="text-white font-mono font-bold text-base sm:text-lg tracking-wider" id="cimb-rek">708207071700</span>
+                            <span class="text-[11px] text-slate-400 block">a.n. Fajar Nurhidayat</span>
+                        </div>
+                    </div>
+                    <button onclick="copyRekening()" class="w-full sm:w-auto bg-brand-blue/20 hover:bg-brand-blue text-brand-lightBlue hover:text-white px-3 py-2 rounded-lg text-xs font-semibold border border-brand-blue/40 transition-all flex items-center justify-center gap-1.5 shrink-0 active:scale-95">
+                        <i class="fa-regular fa-copy"></i>
+                        <span id="copy-text">Salin Rekening</span>
+                    </button>
+                </div>
+
+                <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+                    <!-- CIMB Niaga Badge -->
+                    <div class="bg-brand-black/80 border border-red-500/40 px-4 py-2 rounded-xl flex items-center gap-2 text-xs font-bold text-red-400">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <span>CIMB Niaga</span>
+                    </div>
+                    <!-- QRIS -->
+                    <div class="bg-brand-black/80 border border-brand-border px-4 py-2 rounded-xl flex items-center gap-2 text-xs font-bold text-slate-200">
+                        <i class="fa-solid fa-qrcode text-brand-blue text-base"></i>
+                        <span>QRIS (All Payment)</span>
+                    </div>
+                    <!-- GoPay -->
+                    <div class="bg-brand-black/80 border border-brand-border px-4 py-2 rounded-xl flex items-center gap-2 text-xs font-bold text-sky-400">
+                        <i class="fa-solid fa-wallet"></i>
+                        <span>GoPay</span>
+                    </div>
+                    <!-- OVO -->
+                    <div class="bg-brand-black/80 border border-brand-border px-4 py-2 rounded-xl flex items-center gap-2 text-xs font-bold text-purple-400">
+                        <i class="fa-solid fa-wallet"></i>
+                        <span>OVO</span>
+                    </div>
+                    <!-- DANA -->
+                    <div class="bg-brand-black/80 border border-brand-border px-4 py-2 rounded-xl flex items-center gap-2 text-xs font-bold text-blue-400">
+                        <i class="fa-solid fa-wallet"></i>
+                        <span>DANA</span>
+                    </div>
+                    <!-- ShopeePay -->
+                    <div class="bg-brand-black/80 border border-brand-border px-4 py-2 rounded-xl flex items-center gap-2 text-xs font-bold text-orange-400">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span>ShopeePay</span>
+                    </div>
+                    <!-- Bank Transfer -->
+                    <div class="bg-brand-black/80 border border-brand-border px-4 py-2 rounded-xl flex items-center gap-2 text-xs font-bold text-slate-300">
+                        <i class="fa-solid fa-building-columns text-emerald-400"></i>
+                        <span>BCA / Mandiri / BRI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= MARKETPLACE PENJUALAN ================= -->
+    <section id="marketplace" class="py-20 bg-brand-black/60 border-t border-brand-border/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-brand-blue font-semibold text-sm uppercase tracking-widest mb-2">Toko Resmi</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-white">Order Via Marketplace Favorit Anda</h3>
+                <p class="text-slate-400 text-sm mt-3">Nikmati kemudahan order dengan pembayaran aman, voucher promo, dan garansi via platform e-commerce terpercaya.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+                <!-- Shopee -->
+                <a href="https://shopee.co.id" target="_blank" class="bg-brand-darkCard border border-brand-border hover:border-orange-500/60 p-6 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-orange-500/10 text-orange-500 rounded-2xl flex items-center justify-center text-3xl mb-4 group-hover:bg-orange-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <h4 class="text-white font-bold text-base mb-1">Shopee Store</h4>
+                    <span class="text-slate-400 text-xs">Official Shop</span>
+                    <span class="mt-4 text-xs text-orange-400 font-semibold group-hover:underline flex items-center gap-1">
+                        <span>Kunjungi</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </a>
+
+                <!-- Tokopedia -->
+                <a href="https://tokopedia.com" target="_blank" class="bg-brand-darkCard border border-brand-border hover:border-emerald-500/60 p-6 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-emerald-500/10 text-emerald-400 rounded-2xl flex items-center justify-center text-3xl mb-4 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <h4 class="text-white font-bold text-base mb-1">Tokopedia</h4>
+                    <span class="text-slate-400 text-xs">Power Merchant</span>
+                    <span class="mt-4 text-xs text-emerald-400 font-semibold group-hover:underline flex items-center gap-1">
+                        <span>Kunjungi</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </a>
+
+                <!-- TikTok Shop -->
+                <a href="https://tiktok.com" target="_blank" class="bg-brand-darkCard border border-brand-border hover:border-pink-500/60 p-6 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-pink-500/10 text-pink-400 rounded-2xl flex items-center justify-center text-3xl mb-4 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                    <h4 class="text-white font-bold text-base mb-1">TikTok Shop</h4>
+                    <span class="text-slate-400 text-xs">Live & Catalogue</span>
+                    <span class="mt-4 text-xs text-pink-400 font-semibold group-hover:underline flex items-center gap-1">
+                        <span>Kunjungi</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </a>
+
+                <!-- Lazada -->
+                <a href="https://lazada.co.id" target="_blank" class="bg-brand-darkCard border border-brand-border hover:border-blue-500/60 p-6 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-blue-500/10 text-blue-400 rounded-2xl flex items-center justify-center text-3xl mb-4 group-hover:bg-blue-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <h4 class="text-white font-bold text-base mb-1">Lazada</h4>
+                    <span class="text-slate-400 text-xs">LazMall Store</span>
+                    <span class="mt-4 text-xs text-blue-400 font-semibold group-hover:underline flex items-center gap-1">
+                        <span>Kunjungi</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PORTOFOLIO / FOTO PRODUK ================= -->
+    <section id="portofolio" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-brand-blue font-semibold text-sm uppercase tracking-widest mb-2">Galeri Hasil Karya</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-white">Portofolio Desain Terbaik</h3>
+            </div>
+
+            <!-- Grid Galeri -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="bg-brand-darkCard rounded-2xl overflow-hidden border border-brand-border group hover:border-brand-blue/50 transition-all">
+                    <div class="relative overflow-hidden aspect-video bg-slate-800">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80" 
+                             alt="Desain Branding Minimalis" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://placehold.co/800x600/131B2E/0066FF?text=Logo+Branding'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <span class="text-brand-lightBlue text-sm font-semibold">Branding & Logo</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-white group-hover:text-brand-blue transition-colors">Identitas Logo Cafe Modern</h4>
+                        <p class="text-slate-400 text-sm mt-2">Konsep logo minimalis dan elegan untuk jaringan coffee shop lokal.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-brand-darkCard rounded-2xl overflow-hidden border border-brand-border group hover:border-brand-blue/50 transition-all">
+                    <div class="relative overflow-hidden aspect-video bg-slate-800">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80" 
+                             alt="Social Media Design" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://placehold.co/800x600/131B2E/0066FF?text=Social+Media+Post'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <span class="text-brand-lightBlue text-sm font-semibold">Social Media</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-white group-hover:text-brand-blue transition-colors">Feeds Instagram Fashion Brand</h4>
+                        <p class="text-slate-400 text-sm mt-2">Desain promosi feed Instagram bertema promo diskon dan peluncuran produk.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-brand-darkCard rounded-2xl overflow-hidden border border-brand-border group hover:border-brand-blue/50 transition-all">
+                    <div class="relative overflow-hidden aspect-video bg-slate-800">
+                        <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Desain Kemasan" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://placehold.co/800x600/131B2E/0066FF?text=Desain+Kemasan'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <span class="text-brand-lightBlue text-sm font-semibold">Packaging Design</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-white group-hover:text-brand-blue transition-colors">Kemasan Makanan Snack UMKM</h4>
+                        <p class="text-slate-400 text-sm mt-2">Desain standing pouch dengan warna yang memikat minat pembeli.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="bg-brand-darkCard rounded-2xl overflow-hidden border border-brand-border group hover:border-brand-blue/50 transition-all">
+                    <div class="relative overflow-hidden aspect-video bg-slate-800">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Desain Flyer & Poster" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://placehold.co/800x600/131B2E/0066FF?text=Brosur+%26+Flyer'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <span class="text-brand-lightBlue text-sm font-semibold">Print Design</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-white group-hover:text-brand-blue transition-colors">Poster Event Music Festival</h4>
+                        <p class="text-slate-400 text-sm mt-2">Desain poster acara musik dengan gaya futuristik dan kombinasi warna neon.</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 (Kartu Nama Eksekutif) -->
+                <div class="bg-brand-darkCard rounded-2xl overflow-hidden border border-brand-border group hover:border-brand-blue/50 transition-all">
+                    <div class="relative overflow-hidden aspect-video bg-slate-800">
+                        <img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?auto=format&fit=crop&w=800&q=80" 
+                             alt="Desain Kartu Nama" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://placehold.co/800x600/131B2E/0066FF?text=Kartu+Nama'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <span class="text-brand-lightBlue text-sm font-semibold">Corporate Stationery</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-white group-hover:text-brand-blue transition-colors">Desain Kartu Nama Eksekutif</h4>
+                        <p class="text-slate-400 text-sm mt-2">Kartu nama eksklusif dengan finishing elegan untuk kebutuhan profesional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ANALYTICS & STATISTIK KINERJA ================= -->
+    <section id="analytics" class="py-20 bg-brand-darkCard/40 border-t border-brand-border/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-brand-blue font-semibold text-sm uppercase tracking-widest mb-2">Statistik Kinerja</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-white">Analytics & Pencapaian Layanan</h3>
+                <p class="text-slate-400 text-sm mt-3">Data pergerakan performa pengerjaan desain dan tingkat kepuasan pelanggan kami.</p>
+            </div>
+
+            <!-- Grid Angka Analytics -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="bg-brand-darkCard border border-brand-border p-6 rounded-2xl text-center">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-brand-blue mb-2">1,500+</div>
+                    <span class="text-slate-300 text-xs sm:text-sm font-medium">Projek Desain Selesai</span>
+                </div>
+                <div class="bg-brand-darkCard border border-brand-border p-6 rounded-2xl text-center">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-emerald-400 mb-2">99.4%</div>
+                    <span class="text-slate-300 text-xs sm:text-sm font-medium">Tingkat Kepuasan Klien</span>
+                </div>
+                <div class="bg-brand-darkCard border border-brand-border p-6 rounded-2xl text-center">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-amber-400 mb-2">4.9 / 5.0</div>
+                    <span class="text-slate-300 text-xs sm:text-sm font-medium">Rating Evaluasi Klien</span>
+                </div>
+                <div class="bg-brand-darkCard border border-brand-border p-6 rounded-2xl text-center">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-cyan-400 mb-2">5+ Tahun</div>
+                    <span class="text-slate-300 text-xs sm:text-sm font-medium">Pengalaman Pengoperasian</span>
+                </div>
+            </div>
+
+            <!-- Visual Bar Grafik Permintaan Layanan -->
+            <div class="bg-brand-darkCard border border-brand-border p-6 sm:p-8 rounded-2xl max-w-4xl mx-auto">
+                <h4 class="text-white font-bold text-base sm:text-lg mb-6 flex items-center gap-2">
+                    <i class="fa-solid fa-chart-line text-brand-blue"></i>
+                    <span>Distribusi Layanan Paling Banyak Dipesan</span>
+                </h4>
+
+                <div class="space-y-5">
+                    <!-- Progress Item 1 -->
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-slate-200">Logo & Visual Branding</span>
+                            <span class="text-brand-lightBlue">42%</span>
+                        </div>
+                        <div class="w-full h-3 bg-brand-black rounded-full overflow-hidden border border-brand-border">
+                            <div class="h-full bg-gradient-to-r from-brand-blue to-cyan-400 rounded-full" style="width: 42%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Progress Item 2 -->
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-slate-200">Desain Social Media (IG/TikTok)</span>
+                            <span class="text-emerald-400">30%</span>
+                        </div>
+                        <div class="w-full h-3 bg-brand-black rounded-full overflow-hidden border border-brand-border">
+                            <div class="h-full bg-gradient-to-r from-emerald-500 to-teal-300 rounded-full" style="width: 30%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Progress Item 3 -->
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-slate-200">Banner & Media Cetak Promosi</span>
+                            <span class="text-purple-400">18%</span>
+                        </div>
+                        <div class="w-full h-3 bg-brand-black rounded-full overflow-hidden border border-brand-border">
+                            <div class="h-full bg-gradient-to-r from-purple-500 to-indigo-400 rounded-full" style="width: 18%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Progress Item 4 -->
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-slate-200">Desain Kemasan / Packaging</span>
+                            <span class="text-amber-400">10%</span>
+                        </div>
+                        <div class="w-full h-3 bg-brand-black rounded-full overflow-hidden border border-brand-border">
+                            <div class="h-full bg-gradient-to-r from-amber-500 to-orange-400 rounded-full" style="width: 10%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= KEUNGGULAN ================= -->
+    <section id="keunggulan" class="py-20 bg-brand-darkCard/30 border-y border-brand-border/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-brand-blue font-semibold text-sm uppercase tracking-widest mb-2">Mengapa Kami</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-white">Alasan Memilih Graphics Design</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-brand-darkCard border border-brand-border text-center">
+                    <div class="w-16 h-16 bg-brand-blue/20 text-brand-blue rounded-full flex items-center justify-center mx-auto text-2xl mb-6">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Pengerjaan Cepat</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Kami memahami pentingnya waktu bagi bisnis Anda. Hasil desain siap sesuai kesepakatan waktu.
+                    </p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-brand-darkCard border border-brand-border text-center">
+                    <div class="w-16 h-16 bg-brand-blue/20 text-brand-blue rounded-full flex items-center justify-center mx-auto text-2xl mb-6">
+                        <i class="fa-solid fa-rotate-left"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Revisi Garansi</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Kurang cocok dengan hasilnya? Kami menyediakan kesempatan revisi agar desain sesuai keinginan Anda.
+                    </p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-brand-darkCard border border-brand-border text-center">
+                    <div class="w-16 h-16 bg-brand-blue/20 text-brand-blue rounded-full flex items-center justify-center mx-auto text-2xl mb-6">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Kualitas High-Res</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Anda akan menerima file master lengkap (PNG, JPG, PDF, atau Vector AI/PSD) siap cetak & posting.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TESTIMONI ================= -->
+    <section id="testimoni" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-brand-blue font-semibold text-sm uppercase tracking-widest mb-2">Testimoni Klien</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-white">Apa Kata Pelanggan Kami?</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimoni 1 -->
+                <div class="bg-brand-darkCard border border-brand-border p-8 rounded-2xl relative">
+                    <div class="flex items-center gap-1 text-amber-400 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic mb-6">
+                        "Hasil logo untuk kedai kopi saya keren banget! Tim Graphics Design sangat komunikatif dan cepat menangkap ide yang saya inginkan."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-brand-blue/30 flex items-center justify-center font-bold text-brand-lightBlue">
+                            R
+                        </div>
+                        <div>
+                            <h5 class="text-white font-bold text-sm">Rian Pratama</h5>
+                            <span class="text-slate-500 text-xs">Owner Kopi Nuansa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimoni 2 -->
+                <div class="bg-brand-darkCard border border-brand-border p-8 rounded-2xl relative">
+                    <div class="flex items-center gap-1 text-amber-400 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic mb-6">
+                        "Desain feed Instagram toko online saya jadi keliatan sangat profesional. Omset penjualan naik setelah rutin pesan desain di sini!"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-brand-blue/30 flex items-center justify-center font-bold text-brand-lightBlue">
+                            S
+                        </div>
+                        <div>
+                            <h5 class="text-white font-bold text-sm">Siti Rahma</h5>
+                            <span class="text-slate-500 text-xs">Founder Glowup Beauty</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimoni 3 -->
+                <div class="bg-brand-darkCard border border-brand-border p-8 rounded-2xl relative">
+                    <div class="flex items-center gap-1 text-amber-400 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic mb-6">
+                        "Pesan kemasan produk di sini gak pernah mengecewakan. Hasil cetaknya pas dan warna sesuai dengan file awal. Rekomended!"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-brand-blue/30 flex items-center justify-center font-bold text-brand-lightBlue">
+                            A
+                        </div>
+                        <div>
+                            <h5 class="text-white font-bold text-sm">Andi Wijaya</h5>
+                            <span class="text-slate-500 text-xs">Owner Snack Crispy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= BANNER CALL TO ACTION ================= -->
+    <section class="py-16 bg-gradient-to-r from-brand-blue to-blue-800 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">Siap Membuat Bisnis Anda Tampil Lebih Menarik?</h2>
+            <p class="text-blue-100 max-w-2xl mx-auto mb-8 text-base sm:text-lg">
+                Hubungi kami sekarang untuk diskusikan kebutuhan desain grafis Anda. Dapatkan penawaran harga terbaik!
+            </p>
+            <a href="https://wa.me/6285777238700?text=Halo%20Graphics%20Design,%20saya%20ingin%20tanya%20harga%20jasa%20desain" 
+               target="_blank" 
+               class="inline-flex items-center gap-3 bg-brand-black hover:bg-slate-900 text-white font-bold px-8 py-4 rounded-xl shadow-2xl transition-all duration-300 hover:scale-105">
+                <i class="fa-brands fa-whatsapp text-2xl text-green-400"></i>
+                <span>Hubungi via WhatsApp</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-brand-black border-t border-brand-border py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Col 1 -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-brand-blue to-cyan-400 flex items-center justify-center text-white font-black text-sm">
+                            GD
+                        </div>
+                        <span class="font-bold text-lg text-white">Graphics<span class="text-brand-blue">Design</span></span>
+                    </div>
+                    <p class="text-slate-400 text-sm max-w-sm leading-relaxed mb-6">
+                        Penyedia jasa desain grafis profesional terpercaya untuk segala kebutuhan branding dan visual usaha Anda.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/cirjafareeee" target="_blank" title="Instagram @cirjafareeee" class="w-10 h-10 rounded-full bg-brand-darkCard border border-brand-border flex items-center justify-center text-pink-400 hover:text-white hover:bg-pink-600 hover:border-pink-600 transition-colors">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://lynk.id/fajardesign" target="_blank" title="Lynk.id Profile" class="w-10 h-10 rounded-full bg-brand-darkCard border border-brand-border flex items-center justify-center text-purple-400 hover:text-white hover:bg-purple-600 hover:border-purple-600 transition-colors">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-brand-darkCard border border-brand-border flex items-center justify-center text-slate-400 hover:text-brand-blue hover:border-brand-blue transition-colors">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-brand-darkCard border border-brand-border flex items-center justify-center text-slate-400 hover:text-brand-blue hover:border-brand-blue transition-colors">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2 -->
+                <div>
+                    <h5 class="text-white font-semibold mb-4">Navigasi</h5>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="#home" class="hover:text-brand-blue transition-colors">Beranda</a></li>
+                        <li><a href="#layanan" class="hover:text-brand-blue transition-colors">Layanan</a></li>
+                        <li><a href="#portofolio" class="hover:text-brand-blue transition-colors">Portofolio</a></li>
+                        <li><a href="#keunggulan" class="hover:text-brand-blue transition-colors">Keunggulan</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div>
+                    <h5 class="text-white font-semibold mb-4">Kontak Kami</h5>
+                    <ul class="space-y-3 text-sm text-slate-400">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-brands fa-whatsapp text-brand-blue"></i>
+                            <span>+62 857-7723-8700</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-regular fa-envelope text-brand-blue"></i>
+                            <span>info@graphicsdesign.com</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-brand-blue mt-1"></i>
+                            <span>Jakarta, Indonesia</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-brand-border text-center text-slate-500 text-xs">
+                &copy; 2026 Graphics Design. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+    <a href="https://wa.me/6285777238700?text=Halo%20Graphics%20Design,%20saya%20ingin%20tanya-tanya%20jasa%20desain" 
+       target="_blank" 
+       class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+       title="Chat WhatsApp">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-500 ease-in-out text-sm font-semibold pl-0 group-hover:pl-2">
+            Chat WhatsApp
+        </span>
+    </a>
+
+    <!-- JavaScript Mobile Menu Toggle -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Function Copy Rekening CIMB Niaga
+        function copyRekening() {
+            const rekNumber = document.getElementById('cimb-rek').innerText;
+            const tempInput = document.createElement('input');
+            tempInput.value = rekNumber;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            const copyText = document.getElementById('copy-text');
+            copyText.innerText = 'Tersalin!';
+            setTimeout(() => {
+                copyText.innerText = 'Salin Rekening';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
+    <!-- JavaScript Mobile Menu & QRIS Modal -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+        });
+
+        // Function Modal Pembayaran QRIS
+        function openQrisModal(packageName, price) {
+            document.getElementById('modal-packageName').innerText = packageName;
+            document.getElementById('modal-packagePrice').innerText = 'Rp ' + price;
+            
+            const waMsg = encodeURIComponent(`Halo Graphics Design, saya telah melakukan pembayaran QRIS untuk ${packageName} sebesar Rp ${price}. Mohon diproses.`);
+            document.getElementById('modal-waBtn').href = `https://wa.me/6285777238700?text=${waMsg}`;
+
+            document.getElementById('qris-modal').classList.remove('hidden');
+        }
+
+        function closeQrisModal() {
+            document.getElementById('qris-modal').classList.add('hidden');
+        }
+
+        // Function Copy Rekening CIMB Niaga
+        function copyRekening() {
+            const rekNumber = document.getElementById('cimb-rek').innerText;
+            const tempInput = document.createElement('input');
+            tempInput.value = rekNumber;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            const copyText = document.getElementById('copy-text');
+            copyText.innerText = 'Tersalin!';
+            setTimeout(() => {
+                copyText.innerText = 'Salin Rekening';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
